@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <!-- basic.html -->
+  <title>Autocomplete JS</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+<body>
+  
+  <h1>JavaScript Homework</h1>
+	<p>Add the JavaScript code needed <span>to enable auto-complete</span> on this form.  <span>Whenever the checkbox is checked</span>, the code should <span>automatically copy the values</span>from Shipping Name and Shipping Zip into the Billing Name and Billing Zip.  If the checkbox is unchecked, the Billing Name and Billing Zip should go blank.</p>
+
+<form>
+		<fieldset>
+			<legend>Shipping Information</legend>
+			<label for ="shippingName">Name:</label>
+			<input type = "text" name = "shipName" id = "shippingName" required><br/>
+			<label for = "shippingZip">Zip code:</label>
+			<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>
+		<label for = "same">Is the Billing Information the Same?</label>
+				
+		<fieldset> 
+			<legend>Billing Information</legend>
+			<label for ="billingName">Name:</label>
+			<input type = "text" name = "billName" id = "billingName" required><br/>
+			<label for = "billingZip">Zip code:</label>
+			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+			<input class="button" type = "submit" value = "Verify"></input>
+		</form>
+</body>
+</html>

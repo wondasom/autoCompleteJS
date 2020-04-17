@@ -1,0 +1,66 @@
+input{
+			border:1px solid black;
+	}
+
+input:focus{
+			background-color: #E6E6E6;
+	}
+
+fieldset{
+			margin-bottom: 4%;
+	}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 70%;
+	margin: 0 auto;
+}
+
+h1{
+	font-weight: 900;
+	font-size: 44px;
+	padding: 20px 0px;
+	
+}
+
+p{
+	font-style: italic;
+	line-height: 1.6;
+	font-size: 20px;
+
+}
+
+p span {
+	background-color: yellow;
+
+}
+
+legend{
+	line-height: 1.6;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 600;
+	margin: 10px;
+	padding: 1px;
+	background-color: yellow;
+}
+
+label, input{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.6;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.button{
+	line-height: 1.6;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 600;
+	margin: 20px auto;
+	display: block;
+	padding: 10px 20px;
+	background-color: yellow;
+}
+
